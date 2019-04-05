@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <!-- @include _partials/_all-meta-head.html -->
+</head>
+
+<body class="wp-app layout-1">
+	<!-- @include _partials/_main-menu.html -->
+    <div class="wrapper">
+        <!-- @include _partials/_sidebar.html -->
+        <div class="container-fluid page-wrap">
+            <div class="row">
+                <div class="col-md-12 main-panel-wrap">
+                    <div class="main-panel">
+                        <div class="container-fluid main-panel-page">
+                            <div class="homepage-wrap-page">
+                                <!-- @include _partials/_home-left-column-container.html -->
+                                <!-- @include _partials/_home-middle-column-container.html -->
+                                <!-- @include _partials/_home-right-column-container.html -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modals Starts -->
+<!-- show all comments modal -->
+<!-- @include _partials/_show-all-comments-modal.html -->
+<!-- @include _partials/_dashboard-notifications-modal.html -->
+
+<!-- Modals Ends -->
+
+<!--   Core JS Files   -->
+<!-- @include _partials/_all-js-files.html -->
+
+<!-- Custom scripts -->
+
+    <script type="text/javascript">
+        /*Auto resize textarea*/
+        $(document).ready(function() {
+            $('#statusUpdate,#commentPost').each(function() {
+                $(this).autogrow({vertical: true, horizontal: false});
+            });
+
+        });
+    </script>
+
+
+    <script>
+      $(function() {
+        /*Initializes and creates emoji set from sprite sheet*/
+/*        window.emojiPicker = new EmojiPicker({
+          emojiable_selector: '[data-emojiable=true]',
+          assetsPath: 'lbd/lib/emoji-picker-master/lib/img/',
+          popupButtonClasses: 'fa fa-smile-o'
+        });*/
+        /*Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+        You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+        It can be called as many times as necessary; previously converted input fields will not be converted again*/
+        /*window.emojiPicker.discover();*/
+      });
+    </script>
+     <!-- End emoji-picker JavaScript -->
+    <script type="text/javascript">
+
+        /*Show filter*/
+        /*$('.filter-title-flip-container .filter-container').hide();
+            $('.filter-title-flip-container .feed-title-container a').click(function(e) {
+            e.preventDefault();
+            $('.filter-title-flip-container .filter-container').show(400);
+            $('.filter-title-flip-container .feed-title-container').hide(400);
+
+        });*/
+
+        //Search box Search Icon
+        $('.status-update-container .status-update-text input').keyup(function() {
+            if($(this).val() == ''){
+                $(this).parent().find('a.reset-search').css({
+                    display: 'none'
+                });
+            }else{
+                $(this).parent().find('a.reset-search').css({
+                    display: 'block'
+                });
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $(document).on('focus', ".status-update-text textarea", function(e){
+              var userImage = $(this).parents('.status-update-text').siblings('.user-image');
+              var sendCommentActions = $(this).parents('.send-comment-container-row').siblings('.send-comment-actions');
+              $(userImage).slideDown();
+              $(sendCommentActions).slideDown();
+              /*$('.send-comment-container .user-image, .send-comment-actions').slideDown();*/
+            });
+            $(document).on('click', ".send-comment-actions .btn-no", function(e){
+                e.stopImmediatePropagation();
+                var userImage = $(this).parents('.send-comment-actions').siblings().find($('.user-image')),
+                    sendCommentActions = $(this).parents('.send-comment-actions'),
+                    textArea = $(this).parents('.send-comment-actions').siblings().find($('textarea'));
+                $(textArea).css({'height':'40px'});
+                $(userImage).slideUp();
+                $(sendCommentActions).slideUp();
+               /* $('.send-comment-container .user-image, .send-comment-actions').slideUp();*/
+            });
+
+
+/*    Readmore/less Code
+    Configure/customize these variables.
+
+     $('.comment').each(function() {
+            $(this).shorten({
+                "showChars" : 250,
+                "moreText"  : "See More",
+                "lessText"  : "Less",
+            });
+        });*/
+
+     $('.comment').each(function(){
+        $(this).readmore({
+                speed : 100,
+                collapsedHeight: 60,
+                moreLink: '<a href="#" class="morelink">See more</a>',
+                lessLink: '<a href="#" class="morelink">See Less</a>'
+            });
+     });
+
+     $('.modal').one('show.bs.modal', function () {
+/*    for styling purpose only*/
+    $(this).find('.comment').css({overflow: "hidden"});
+        }).one('shown.bs.modal shown.bs.tab', function () {
+            /*initialize plugin once modal shown*/
+            $(this).find('.comment').readmore({
+                speed : 100,
+                collapsedHeight: 60,
+                moreLink: '<a href="#" class="morelink">See more</a>',
+                lessLink: '<a href="#" class="morelink">See Less</a>'
+            });
+    });
+
+    });
+
+    </script>
+
+</body>
+</html>

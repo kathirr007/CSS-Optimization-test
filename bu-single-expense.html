@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+        <!-- @include _partials/_all-meta-head.html -->
+    </head>
+    <body class="wp-app layout-2">
+        <!-- @include _partials/_main-menu.html -->
+        <div class="wrapper">
+            <!-- @include _partials/_sidebar.html -->
+            <div class="container-fluid page-wrap">
+                <div class="row">
+                    <div class="col-md-12 main-panel-wrap">
+                        <div class="main-panel">
+                            <div class="container-fluid main-panel-page">
+                                <div class="bu-single-page">
+                                    <div class="col-md-12 main-panel-page-header clearfix">
+                                        <div class="col-md-1 contract-image">
+                                            <div class="contract-image-container">
+                                                <img src="lbd/img/webedia.jpg" class="img-circle" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 contract">
+                                            <div class="contract-spec pull-left">
+                                                <div class="contract-breadcrumb">
+                                                    <a href="javascript:;">Job Profile</a><i class="material-icons">chevron_right</i><a href="javascript:;">Uptilab</a></div>
+                                                    <div class="contract-name">
+                                                        <strong class="primary-font">Uptilab</strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row main-container">
+                                            <div class="overlay-main-container"></div>
+                                            <div class="col-md-4 tab-panel-container">
+                                                <div class="tab-panel">
+                                                    <div class="page-filter">
+                                                        <div class="card-status-list-container">
+                                                            <div class="status-title mt-25">EXPENSES AND BUSINESS MANAGEMENT</div>
+                                                            <div class="status-list">
+                                                                <ul class="btn-group btn-group-justified" data-toggle="buttons">
+                                                                    <li>
+                                                                        <a href="#productCreation" class="btn btn-default" data-toggle="tab">
+                                                                            <input type="radio" id="" name="bu-filter-tabs" value="mandayMissionConfig" />
+                                                                            <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Product creation
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#productConfig" class="btn btn-default" data-toggle="tab">
+                                                                            <input type="radio" id="" name="bu-filter-tabs" value="subsMissionConfig" />
+                                                                            <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Product configuration
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#rateCardCost" class="btn btn-default" data-toggle="tab">
+                                                                            <input type="radio" id="" name="bu-filter-tabs" value="atcostMissionConfig" />
+                                                                            <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Rate card cost
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-list-container">
+                                                            <div class="filter-title">Filters</div>
+                                                            <div class="filter-list">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="select-group">
+                                                                            <div class="form-group product">
+                                                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Product" id="product">
+                                                                                    <option data-hidden="true"></option>
+                                                                                    <option value="0">0</option>
+                                                                                    <option value="1">1</option>
+                                                                                    <option value="2">2</option>
+                                                                                    <option value="3">3</option>
+                                                                                    <option value="4">4</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="select-group">
+                                                                            <div class="form-group product-type">
+                                                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Product type" id="productType">
+                                                                                    <option data-hidden="true"></option>
+                                                                                    <option>0</option>
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="select-group">
+                                                                            <div class="form-group langauge">
+                                                                                <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Langauge" id="langauge">
+                                                                                    <option data-hidden="true"></option>
+                                                                                    <option>0</option>
+                                                                                    <option>1</option>
+                                                                                    <option>2</option>
+                                                                                    <option>3</option>
+                                                                                    <option>4</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-md-offset-4 main-panel-container">
+                                                <div class="setting-wrap-container">
+                                                    <div class="col-md-12 settings-wrap bu-expense-edit-container">
+                                                        <span class="close">
+                                                            <a href="javascript:;">
+                                                                <i class="material-icons">
+                                                                close
+                                                                </i>
+                                                            </a>
+                                                        </span>
+                                                        <div class="header mb-5">
+                                                            <strong class="primary-font">
+                                                                Modify a rate card
+                                                            </strong>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 bu-profile-edit">
+                                                                <form class="form" >
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Business unit</label>
+                                                                            <input type="text" class="form-control disabled" placeholder="ex: Webedia, LVMH"  value="Utilib" disabled="disabled">
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Service</label>
+                                                                            <div class="select-group">
+                                                                                <div class="form-group service">
+                                                                                    <select class="selectpicker" disabled title="Select service" id="service">
+                                                                                        <option data-hidden="true"></option>
+                                                                                        <option>Service 1</option>
+                                                                                        <option>Service 2</option>
+                                                                                        <option>Service 3</option>
+                                                                                        <option>Service 4</option>
+                                                                                        <option>Service 5</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Products</label>
+                                                                            <div class="select-group">
+                                                                                <div class="form-group service">
+                                                                                    <select class="selectpicker" disabled title="Select products" id="products">
+                                                                                        <option data-hidden="true"></option>
+                                                                                        <option>Products 1</option>
+                                                                                        <option>Products 2</option>
+                                                                                        <option>Products 3</option>
+                                                                                        <option>Products 4</option>
+                                                                                        <option>Products 5</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Product type</label>
+                                                                            <div class="select-group">
+                                                                                <div class="form-group service">
+                                                                                    <select class="selectpicker" disabled title="Select product type" id="product-type">
+                                                                                        <option data-hidden="true"></option>
+                                                                                        <option>Product type 1</option>
+                                                                                        <option>Product type 2</option>
+                                                                                        <option>Product type 3</option>
+                                                                                        <option>Product type 4</option>
+                                                                                        <option>Product type 5</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Language</label>
+                                                                            <div class="select-group">
+                                                                                <div class="form-group language">
+                                                                                    <select class="selectpicker" disabled title="Select language" id="language">
+                                                                                        <option data-hidden="true"></option>
+                                                                                        <option>English (United kingdom)</option>
+                                                                                        <option>English (United States)</option>
+                                                                                        <option>Spanish</option>
+                                                                                        <option>French</option>
+                                                                                        <option>Hindi</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Writing cost (&#8364;)</label>
+                                                                            <div class="input-group">
+                                                                                <input class="form-control" type="text" value="">
+                                                                                <span class="input-group-addon">
+                                                                                    <select class="selectpicker" name="delivery time">
+                                                                                        <option>word</option>
+                                                                                        <option>sign</option>
+                                                                                        <option>item</option>
+                                                                                        <option>article</option>
+                                                                                    </select>
+                                                                                </span>
+                                                                                </input>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6 mb-3">
+                                                                            <label>Proofreader cost (&#8364;)</label>
+                                                                            <div class="input-group">
+                                                                            <input class="form-control" type="text" value="">
+                                                                            <span class="input-group-addon">
+                                                                                <select class="selectpicker" name="delivery time">
+                                                                                    <option>word</option>
+                                                                                    <option>sign</option>
+                                                                                    <option>item</option>
+                                                                                    <option>article</option>
+                                                                                </select>
+                                                                            </span>
+                                                                            </input>
+                                                                        </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group mt-3">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <button type="button" class="btn btn-no full-width">Cancel</button>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <button type="submit" class="btn btn-yes full-width">Save</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content">
+                                                    <div class="col-md-12 contract-content-container">
+                                                        <div class="row">
+                                                            <div class="no-data-container" style="position: absolute;">
+                                                                <div class="no-data-placeholder">
+                                                                    <h2>Start an option on the left to <br />start configurate!</h2>
+                                                                    <p>You can play around the filters as well</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 mb-30 bu-list-header">
+                                                                <div class="row">
+                                                                    <div class="col-md-8 search-list">
+                                                                        <input type="search" class="form-control" placeholder="Search">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6 import-button">
+                                                                                <button type="button" class="btn full-width">Import cost</button>
+                                                                            </div>
+                                                                            <div class="col-md-6 export-button">
+                                                                                <button type="button" class="btn btn-drop full-width" data-toggle="dropdown">Export cost</button>
+                                                                                <ul class="dropdown-menu">
+                                                                                    <li><a href="javascript:;">Export in .csv</a></li>
+                                                                                    <li><a href="javascript:;">Export in .xlsx</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="card-section-list bu-expense-list" data-role="contract-section-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="col-md-12 d-flex card card-contract bu-list">
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Product</span>Writing
+                                                                                </div>
+                                                                                <div class="col-md-3 list-head">
+                                                                                    <span>Product type</span>E-Commerce &amp; retail
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>language</span>Spanish (Dominican republic)
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Writer cost</span>0,072 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Proofreader cost</span>0,032 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-1 edit">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buExpenseEdit" title="Edit">
+                                                                                        <i class="material-icons">
+                                                                                        edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="col-md-12 d-flex card card-contract bu-list">
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Product</span>Writing
+                                                                                </div>
+                                                                                <div class="col-md-3 list-head">
+                                                                                    <span>Product type</span>E-Commerce &amp; retail
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>language</span>English (United kingdom)
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Writer cost</span>0,095 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Proofreader cost</span>0,024 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-1 edit">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buExpenseEdit" title="Edit">
+                                                                                        <i class="material-icons">
+                                                                                        edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="col-md-12 d-flex card card-contract bu-list">
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Product</span>Writing
+                                                                                </div>
+                                                                                <div class="col-md-3 list-head">
+                                                                                    <span>Product type</span>E-Commerce &amp; retail
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>language</span>Spanish (Dominican republic)
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Writer cost</span>0,072 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Proofreader cost</span>0,032 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-1 edit">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buExpenseEdit" title="Edit">
+                                                                                        <i class="material-icons">
+                                                                                        edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="col-md-12 d-flex card card-contract bu-list">
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Product</span>Writing
+                                                                                </div>
+                                                                                <div class="col-md-3 list-head">
+                                                                                    <span>Product type</span>E-Commerce &amp; retail
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>language</span>Spanish (Dominican republic)
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Writer cost</span>0,072 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Proofreader cost</span>0,032 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-1 edit">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buExpenseEdit" title="Edit">
+                                                                                        <i class="material-icons">
+                                                                                        edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="col-md-12 d-flex card card-contract bu-list">
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Product</span>Writing
+                                                                                </div>
+                                                                                <div class="col-md-3 list-head">
+                                                                                    <span>Product type</span>E-Commerce &amp; retail
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>language</span>Spanish (Dominican republic)
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Writer cost</span>0,072 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-2 list-head">
+                                                                                    <span>Proofreader cost</span>0,032 &#8364;
+                                                                                </div>
+                                                                                <div class="col-md-1 edit">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buExpenseEdit" title="Edit">
+                                                                                        <i class="material-icons">
+                                                                                        edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modals Starts -->
+            <!-- Modals Ends -->
+            <!--   Core JS Files   -->
+            <!-- @include _partials/_all-js-files.html -->
+            <!-- Custom scripts -->
+            <!-- Bootstraptable for mission modal -->
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                    $('[id^="buExpenseEdit"]').click(function(e) {
+                        e.preventDefault();
+                        $('.bu-expense-edit-container').fadeIn(function(){
+                            $('.bu-expense-edit-container').css({
+                                display: 'block'
+                            });
+                        });
+                        $('.overlay-main-container').css({
+                            display: 'block'
+                        })
+                        $('.wp-app').css({
+                            overflow: 'hidden'
+                        });
+                    });
+
+
+
+                    $('.settings-wrap .close a, .settings-wrap .tab-navigation button.btn-cancel-settings').click(function() {
+                        $('.overlay-main-container, .settings-wrap').fadeOut(function(){
+                            $('.settings-wrap').css({
+                                display: 'none'
+                            });
+                            $('.overlay-main-container').css({
+                                display: 'none'
+                            })
+                            $('.wp-app').css({
+                                overflow: 'auto'
+                            });
+                        })
+                    });
+                });
+            </script>
+        </body>
+    </html>

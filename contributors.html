@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <!-- @include _partials/_all-meta-head.html -->
+</head>
+
+<body class="wp-app layout-3">
+  <!-- @include _partials/_main-menu.html -->
+<div class="wrapper">
+  <!-- @include _partials/_sidebar.html -->
+  <div class="container-fluid page-wrap">
+    <div class="row">
+      <div class="col-md-12 main-panel-wrap">
+        <div class="main-panel">
+          <div class="container-fluid main-panel-page">
+            <div class="row main-container clients-list-page contributors" id="">
+              <div class="col-md-4 tab-panel-container">
+                <div class="tab-panel outside">
+                  <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <div class="navbar-header"> </div>
+                      <div class="row">
+                        <div class="col-xs-12 page-title">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                          <a class="navbar-brand" href="#">Users</a> </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 tab-panel-search">
+                          <div class="search-input">
+                            <input type="text" class="form-control" name="company" required placeholder="Search a Keyword..." />
+                            <div class="search-icon"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="page-filter">
+                    <div class="status-list-container">
+                      <div class="status-title">Platform</div>
+                      <div class="status-list">
+                        <ul class="btn-group btn-group-justified" data-toggle="buttons">
+                          <li>
+                              <a class="btn btn-default" data-toggle="tab" href="#users-list-fr">
+                                <input id="ongoing" name="contract-tabs" type="radio" value="ongoing" />
+                                <p>Edit-place</p>
+                                <h4>
+                                    France
+                                </h4>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="btn btn-default" data-toggle="tab" href="#users-list-uk">
+                                <input id="validate" name="contract-tabs" type="radio" value="validate" />
+                                <p>Edit-place</p>
+                                <h4>
+                                    United Kingdom
+                                </h4>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="btn btn-default" data-toggle="tab" href="#users-list-uk">
+                                <input id="validate" name="contract-tabs" type="radio" value="validate" />
+                                <p>Edit-place</p>
+                                <h4>
+                                    Collaborators
+                                </h4>
+                              </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="filter-list-container">
+                      <!-- <div class="filter-title">Jobs</div> -->
+                      <div class="filter-list">
+                        <ul>
+                          <li>
+                            <div class="select-group">
+                              <div class="form-group jobs">
+                                <label for="contributorJobs" class="filter-title">Jobs</label>
+                                <select class="selectpicker" multiple data-live-search="false" data-actions-box="true" data-selected-text-format="count > 3" title="All Jobs" id="contributorJobs">
+                                  <option data-hidden="true"></option>
+                                  <option value="0">Writer</option>
+                                  <option value="0">Proof reader</option>
+                                  <option value="1">Job 01</option>
+                                  <option value="2">Job 02</option>
+                                  <option value="3">Job 03</option>
+                                  <option value="4">Job 04</option>
+                                  <option value="5">Job 05</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="contributorLevel" class="filter-title">Level</label>
+                                  <select name="" id="contributorLevel" title="-" multiple class="selectpicker" data-actions-box="true">
+                                    <option data-content="<span class='label senior'>Senior</span>">Senior</option>
+                                    <option data-content="<span class='label junior'>Junior</span>">Junior</option>
+                                    <option data-content="<span class='label beginner'>Beginner</span>">Beginner</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="contributorLanguage" class="filter-title">Languages </label>
+                                  <select class="chosen-default flags" multiple data-placeholder="-" id="contributorLanguage">
+                                    <option data-img-src="lbd/img/flag/us.gif">EN (US)</option>
+                                    <option data-img-src="lbd/img/flag/fr.gif">FR</option>
+                                    <option data-img-src="lbd/img/flag/uk.gif">EN (UK)</option>
+                                    <option data-img-src="lbd/img/flag/sp.gif">ES</option>
+                                    <option data-img-src="lbd/img/flag/pol.gif">PO</option>
+                                  </select>
+                              </div>
+                              <div class="form-group filter-list-container filter-list-bottom">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="" class="filter-title">
+                                            Special Users
+                                        </label>
+                                        <ul class="special-users d-flex">
+                                            <li class="list-item card">
+                                                <label class="checkbox primary-font">
+                                                    <input data-toggle="checkbox" type="checkbox"/>
+                                                    Show inactive users
+                                                </label>
+                                            </li>
+                                            <li class="list-item card">
+                                                <label class="checkbox primary-font">
+                                                    <input data-toggle="checkbox" type="checkbox"/>
+                                                    Show blacklisted users
+                                                </label>
+                                            </li>
+                                            <!-- <li class="list-item card col-md-12 add-website">
+                                                <div class="input-group d-flex">
+                                                    <input type="text" placeholder="Add new website here" required class="form-control" value=""/>
+                                                    <button type="" id="updateNewWebsite" class="btn btn-fill btn-wd auto-width btn-yes">Add</button>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 col-md-offset-4 main-panel-container">
+                <div class="no-data-container">
+                  <div class="no-data-placeholder">
+                    <h2>Play with filters or type a keyword</h2>
+                    <p>Check out on the left side!</p>
+                  </div>
+                </div>
+                <div class="content">
+
+                  <!-- @include _partials/_contributors-fr-users-list.html -->
+                  <!-- @include _partials/_contributors-uk-users-list.html -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal windows starts -->
+
+<!-- Delete confirmation modal -->
+<!-- @include _partials/_delete-confirmation-modal.html -->
+<!-- Profile modal -->
+<!-- @include _partials/_profile-modal.html -->
+<!-- My profile edit and logout modal -->
+<!-- @include _partials/_my-profile-edit-logout-modal.html -->
+<!-- Create new Client modal -->
+<!-- @include _partials/_clients-create-new-client-modal.html -->
+<!-- Create new Contact modal -->
+<!-- @include _partials/_clients-create-new-contact-modal.html -->
+<!-- Contributors user profile modal -->
+<!-- @include _partials/_contributors-user-profile-modal.html -->
+<!-- Gloabal user profile modal -->
+<!-- @include _partials/_global-user-profile-modal.html -->
+<!-- My profile edit account information modal -->
+<!-- @include _partials/_global-new-user-profile-modal.html -->
+<!-- Change user profile image modal -->
+<!-- @include _partials/_change-user-image-modal.html -->
+<!-- My profile edit contact modal -->
+<!-- @include _partials/_my-profile-edit-contact-modal.html -->
+<!-- My profile edit address modal -->
+<!-- @include _partials/_my-profile-edit-address-modal.html -->
+<!-- My profile edit account information modal -->
+<!-- @include _partials/_my-profile-edit-acc-info-modal.html -->
+<!--Contributors new user profile modal -->
+<!-- @include _partials/_contributors-new-user-profile.html -->
+<!-- Modal windows ends -->
+
+
+<!--   Core JS Files   -->
+<!-- @include _partials/_all-js-files.html -->
+
+<!-- Custom Scripts -->
+
+<script>
+$(document).ready(function(){
+
+    /* Edit User contact info */
+    $(document).on('click', ".general-info .info-edit", function(e){
+        e.stopPropagation();
+        $('.contact-info-edit').slideDown();
+    });
+    $(document).on('click', ".info-edit-actions .cancel-btn, .info-edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.contact-info-edit').slideUp();
+    });
+
+    /* Edit User contact informations Email */
+    $(document).on('click', ".add-new-email a.add-new-email", function(e){
+        e.stopPropagation();
+        $(this).parents('.add-new-email').fadeOut();
+        $(this).parents('.add-new-email').siblings('.add-email').fadeIn();
+    });
+    $(document).on('click', ".description-edit-actions .cancel-btn, .description-edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.description-info-edit').fadeOut();
+        $('.user-description-info').fadeIn();
+    });
+
+    /* Edit User contact informations Phone */
+    $(document).on('click', ".add-new-phone a.add-new-phone", function(e){
+        e.stopPropagation();
+        $(this).parents('.add-new-phone').fadeOut();
+        $(this).parents('.add-new-phone').siblings('.add-phone').fadeIn();
+    });
+    $(document).on('click', ".add-phone .edit-actions .btn-no, .add-phone .edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).parents('.add-phone').fadeOut();
+        $(this).parents('.add-phone').siblings('.add-new-phone').fadeIn();
+    });
+
+    /* Edit User description info */
+    $(document).on('click', ".general-info .description-edit", function(e){
+        e.stopPropagation();
+        $('.user-description-info').fadeOut();
+        $('.description-info-edit').fadeIn();
+    });
+    $(document).on('click', ".description-edit-actions .cancel-btn, .description-edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.description-info-edit').fadeOut();
+        $('.user-description-info').fadeIn();
+    });
+
+    /* Edit User about info */
+    $(document).on('click', ".general-info .about-edit", function(e){
+        e.stopPropagation();
+        $('.user-about-info').fadeOut();
+        $('.about-info-edit').fadeIn();
+    });
+    $(document).on('click', ".about-edit-actions .cancel-btn, .about-edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.about-info-edit').fadeOut();
+        $('.user-about-info').fadeIn();
+    });
+
+    /* Edit User languages info */
+    $(document).on('click', ".general-info .languages-edit, .add-new-language .add-a-language", function(e){
+        e.stopPropagation();
+        $('.user-languages-info').fadeOut();
+        $('.language-info-edit').fadeIn();
+    });
+    $(document).on('click', ".language-edit-actions .cancel-btn, .language-edit-actions .btn-yes", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('.language-info-edit').fadeOut();
+        $('.user-languages-info').fadeIn();
+    });
+    $(document).on('click', ".language-info-edit .add-a-language", function(e){
+        var newLanguageRow = ``;
+        e.stopPropagation();
+        /*$( ".user-language-edit-container .user-language-edit:last-child" ).clone().appendTo( ".user-language-edit-container" );
+        $('.user-language-edit:last-child .selectpicker').selectpicker('refresh');
+        $('.user-language-edit-container').append(newLanguageRow);*/
+    });
+    $(document).on('click', '.selectpicker', function(e){
+      $(this).selectpicker('refresh');
+      console.log($(this));
+    });
+
+    $(document).on('click', "#updateNewWebsite", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var addedWebsite = $(this).parents('.input-group').find('input').val();
+        var addedToList = '<li class="list-item card col-md-6"><label class="checkbox primary-font"><span class="icons"><span class="first-icon fa fa-square-o"></span><span class="second-icon fa fa-check-square-o"></span></span><input data-toggle="checkbox" type="checkbox">' + addedWebsite + '</label></li>';
+        if(addedWebsite){
+          $( addedToList ).insertBefore( $('.add-new-website').parents('.list-item') );
+        }
+        $('.add-new-website').parents('.list-item').show();
+        $(this).parents('.list-item.add-website').hide();
+    });
+
+
+    $(document).on('click', ".list-item .add-new-website", function(e){
+        e.stopPropagation();
+        $('.list-item.add-website').show();
+        $(this).parents('.list-item').hide();
+    });
+    $(document).on('click', "#updateNewWebsite", function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var addedWebsite = $(this).parents('.input-group').find('input').val();
+        var addedToList = '<li class="list-item card col-md-6"><label class="checkbox primary-font"><span class="icons"><span class="first-icon fa fa-square-o"></span><span class="second-icon fa fa-check-square-o"></span></span><input data-toggle="checkbox" type="checkbox">' + addedWebsite + '</label></li>';
+        if(addedWebsite){
+          $( addedToList ).insertBefore( $('.add-new-website').parents('.list-item') );
+        }
+        $('.add-new-website').parents('.list-item').show();
+        $(this).parents('.list-item.add-website').hide();
+    });
+
+    $(document).on('click', ".special-users .checkbox", function(e){
+      e.stopPropagation();
+        if ($(this).hasClass('checked')) {
+            $(this).parents('.list-item').addClass('selected-in-list')
+        } else {
+            $(this).parents('.list-item').removeClass('selected-in-list')
+        }
+    });
+
+    /*Card-mission click to open Specific mission*/
+    $('div').delegate('.card-section-list ul li .card', 'click', function(e){
+       if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+          /*code placed inside this condition is not executed on clicking the element #test*/
+    e.stopPropagation();
+          /*window.open('contract-overview.html','_blank');*/
+          $('#contributorsUserProfileModal').modal('show')
+       }
+
+    });
+
+    /*Read more / Read less*/
+     $('.comment').each(function(){
+        $(this).readmore({
+                speed : 100,
+                collapsedHeight: 60,
+                moreLink: '<a href="#" class="morelink">See more</a>',
+                lessLink: '<a href="#" class="morelink">See Less</a>'
+            });
+     });
+
+     $('.modal').one('show.bs.modal', function () {
+      $(this).find('.comment').css({overflow: "hidden"});
+        }).one('shown.bs.modal shown.bs.tab', function () {
+            $(this).find('.comment').readmore({
+                speed : 100,
+                collapsedHeight: 60,
+                moreLink: '<a href="#" class="morelink">See more</a>',
+                lessLink: '<a href="#" class="morelink">See Less</a>'
+            });
+    });
+
+    /*$(document).on( 'shown.bs.tab', 'a[data-toggle=\'tab\']', function (e) {
+       $('.comment').readmore({
+            speed : 100,
+            collapsedHeight: 60,
+            moreLink: '<a href="#" class="morelink">See more</a>',
+            lessLink: '<a href="#" class="morelink">See Less</a>'
+        });
+    })*/
+
+    /* Edit Myprofile User name */
+      $(document).on('click', ".user-details .bo-user", function(e){
+          e.stopPropagation();
+          $(this).parents('.user-name').hide(100);
+          $(this).parents('.row').find('.edit-update-name').show(100);
+      });
+      $(document).on('click', "#updateUserProfileName", function(e){
+          e.preventDefault();
+          e.stopPropagation();
+          $(this).parents('.edit-update-name').hide(100);
+          $(this).parents('.list-head-container').find('.user-name').show(100);
+      });
+
+    /*Left profile nav tab content*/
+
+      $('.profile-info-navs a').click(function(event) {
+        event.preventDefault();
+        if ($(this).hasClass('active')) {
+          return false;
+        }
+        else{
+          $(this).addClass('active');
+          $(this).parent().siblings().children().removeClass('active');
+          var tab = $(this).attr("href");
+          $('.profile-container-right > .tab-content').not(tab).css('display', 'none');
+          $(tab).fadeIn();
+        }
+      });
+    /*Edit Contributor rank*/
+      $(document).on('click', '.contributor-star-edit a', function(e){
+        e.stopPropagation();
+        $(this).parents('.ranking-container').siblings('.edit-ranking').fadeIn();
+        $(this).parents('.ranking-container').addClass('closed');
+      });
+      $(document).on('click', '.edit-ranking .cancel-edit, .edit-ranking .save-changes', function(e){
+        e.stopPropagation();
+        $(this).parents('.edit-ranking').siblings('.ranking-container').removeClass('closed');
+        $(this).parents('.edit-ranking').fadeOut();
+      });
+    /*Edit Contributor rank*/
+
+    /*Comments add new to list*/
+      $(document).on('click', '.add-new-comment-to-list', function(e){
+        e.stopPropagation();
+        $(this).parents('.col-md-12').siblings().find('.add-new-comment').fadeIn();
+      });
+      $(document).on('click', '.comment-container .close, .send-comment', function(e){
+        e.stopPropagation();
+        $(this).parents('li').fadeOut();
+      });
+    /*Comments add new to list ends*/
+
+    /*review rate Starts*/
+        $('[id^="reviewRate"]').each(function(i){
+            var $rateYo = $(this).rateYo({
+                rating: 3.5,
+                spacing: "2px",
+                numStars: 5,
+                normalFill: "#d4d6dc",
+                ratedFill: "#fec500",
+                readOnly: true,
+                starWidth: "16px"
+            });
+
+            var rating = $rateYo.rateYo('rating');
+            if (rating <= 1) {
+                $('.star-rating-label').text(rating + " / 5");
+            }
+            else if ((rating > 1) && (rating <=2)) {
+                $('.star-rating-label').text(rating + " / 5");
+            }
+            else if ((rating > 2) && (rating <=3)) {
+                $('.star-rating-label').text(rating + " / 5");
+            }
+            else if ((rating > 3) && (rating <=4)) {
+                $('.star-rating-label').text(rating + " / 5");
+            }
+            else{
+                $('.star-rating-label').text(rating + " / 5");
+            }
+        });
+    /*review rate Ends*/
+
+    /*My Skills rating starts*/
+        $('[id^="skillRate"]').each(function() {
+            $(this).rateYo({
+                numStars: 3,
+                maxValue: 3,
+                rating: 2,
+                spacing: "10px",
+                fullStar: true,
+                normalFill: "#d4d6dc",
+                ratedFill: "#353f54",
+                readOnly: true,
+                starWidth: "16px"
+            });
+        });
+    /*My Skills rating ends*/
+    /*Edit My Skills rating starts*/
+        $('[id^="editSkillRate"]').each(function() {
+            var $rateYo = $(this).rateYo({
+                numStars: 3,
+                maxValue: 3,
+                rating: 2,
+                spacing: "10px",
+                fullStar: true,
+                normalFill: "#d4d6dc",
+                ratedFill: "#353f54",
+                starWidth: "16px"
+            });
+            var rating = $rateYo.rateYo('rating');
+                  if (rating == 1) {
+                      $('.star-rating-label').text("Beginner");
+                  }
+                  else if ((rating == 2)) {
+                      $('.star-rating-label').text("Intermediate");
+                  }
+                  else if ((rating == 3)) {
+                      $('.star-rating-label').text("Expert!");
+                  }
+                  else{
+                      $('.star-rating-label').text("");
+                  }
+            $(this).click(function(){
+                var rating = $rateYo.rateYo('rating');
+                  if (rating == 1) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Beginner");
+                  }
+                  else if ((rating == 2)) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Intermediate");
+                  }
+                  else if ((rating == 3)) {
+                      $(this).parent('.expert-level').find('.star-rating-label').text("Expert!");
+                  }
+                  else{
+                      $(this).parent('.expert-level').find('.star-rating-label').text("");
+                  }
+            });
+        });
+    /*Edit My Skills rating ends*/
+
+
+});
+</script>
+
+</body>
+</html>

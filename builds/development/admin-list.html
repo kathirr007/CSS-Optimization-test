@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <meta charset="utf-8" />
+    <link href="lbd/img/favicon.ico" rel="icon" type="image/png" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <!-- Fonts, Theme and Bootstrap styles -->
+    <!-- <link href="lbd/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <!-- <link href="lbd/css/jquery-ui.theme.min.css" rel="stylesheet" /> -->
+    <!-- <link href="lbd/css/font-awesome.min.css" rel="stylesheet" /> -->
+    <!-- <link href="lbd/css/material-icons.css" rel="stylesheet" /> -->
+    <!-- <link href="lbd/css/pe-icon-7-stroke.css" rel="stylesheet" /> -->
+    <!-- <link href="lbd/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" />
+    <link href="lbd/css/lbd-bundle.css" rel="stylesheet" />
+    
+    <!-- Plugin Styles -->
+    <!-- <link href="lbd/lib/lib-live/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/ImageSelect.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/jquery.tag-editor.css" rel="StyleSheet" type="text/css" />
+    <link href="lbd/lib/lib-live/slick.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/slick-theme.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/jquery.rateyo.min.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/bootstrap-tokenfield.min.css" rel="stylesheet" type="text/css" />
+    <link href="lbd/lib/lib-live/tokenfield-typeahead.min.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="lbd/lib/slick-1.6.0/slick/slick-theme.css"> -->
+    <link href="lbd/lib/plugins-bundle.css" rel="stylesheet" />
+    
+    <!-- Light Bootstrap Dashboard core CSS -->
+    <link href="lbd/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <!--     Temporary css for Layouts     -->
+    
+    
+    
+</head>
+
+<body class="wp-app layout-3 quotes-list">
+	<ul class="main-nav">
+		<li>
+		    <a href="clients.html" class="nav-link">
+		        <i class="material-icons">business</i>
+		        Clients
+		    </a>
+		</li>
+		<li>
+		    <a href="quote.html" class="nav-link">
+		        <i class="material-icons">monetization_on</i>
+		        Quotes
+		    </a>
+		</li>
+		<li>
+		    <a href="contracts.html" class="nav-link">
+		        <i class="material-icons">assignment</i>
+		        Contracts
+		    </a>
+		</li>
+		<li>
+		    <a href="mission.html" class="nav-link">
+		        <i class="material-icons">alarm</i>
+		        Missions
+		    </a>
+		</li>
+		<li>
+		    <a href="quizz-surveys-list.html" class="nav-link">
+		    	<i class="material-icons">assignment_turned_in</i>
+		        Quiz &amp; Survey
+		    </a>
+		</li>
+		<li>
+		    <a href="contributors.html" class="nav-link">
+		        <i class="material-icons">face</i>
+		        Contributors
+		    </a>
+		</li>
+	    <li>
+	        <a href="admin-list.html" class="nav-link">
+	            <i class="material-icons">settings</i>
+	            Admin
+	        </a>
+	    </li>
+	</ul>
+	
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="logo">
+            <a href="/">
+                <img src="lbd/img/cp-logo.svg" alt="ContentPlace" />
+            </a>
+        </div>
+        <div class="sidebar-wrapper">
+    
+            <ul class="nav">
+                <li>
+                    <a aria-expanded="false" class="nav-link" id="mainMenuDropdown" href="javascript:;">
+                        <span class="nav-link d-flex" data-toggle="tooltip" data-container="body" data-placement="right" title="Menu">
+                            <i class="material-icons">menu</i>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#dashboardNotificationsModal">
+                        <span class="d-flex" data-toggle="tooltip" data-container="body" data-placement="right" title="Notifications">
+                            <i class="material-icons">notifications_none</i>
+                            <span class="notification">3</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a class="switch-workplace clearfix" href="javascript:;">
+                    <i class="material-icons">crop_rotate</i>
+                    <p>Switch to Workplace</p>
+                </a>
+                <a class="profile clearfix" href="javascript:;" data-toggle="modal" data-target="#myprofileEditLogoutModal">
+                    <div class="profile_pic">
+                        <img src="lbd/img/default-avatar.png" alt="..." class="img-circle profile_img" />
+                    </div>
+                    <div class="profile_info">
+                        <p>Clarrise</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid page-wrap">
+        <div class="row">
+            <div class="col-md-12 main-panel-wrap">
+                <div class="main-panel">
+                    <div class="container-fluid main-panel-page">
+                        <div class="admin-list-main-page">
+                            <div class="row main-container">
+                                <div class="overlay-main-container"></div>
+                                <div class="col-md-4 tab-panel-container">
+                                    <div class="tab-panel">
+                                        <nav class="navbar navbar-default">
+                                            <div class="container-fluid">
+                                                <div class="navbar-header">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12 page-title">
+                                                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                        </button>
+                                                        <a class="navbar-brand" href="#">Admin</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                        <div class="page-filter">
+                                            <div class="card-status-list-container">
+                                                <div class="status-list">
+                                                    <ul class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <li>
+                                                            <a href="#agreedTurnover" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="agreedTurnover" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Agreed turnover
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#realTurnover" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="realTurnover" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Real turnover
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#datasExport" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="datasExport" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Datas export
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#royaltiesPayment" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="royaltiesPayment" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Royalties payment
+                                                            </a>
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a href="#jobProfile" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="jobProfile" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Job profile (man/days)
+                                                            </a>
+                                                        </li> -->
+                                                        <li>
+                                                            <a href="#businessUnit" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="mandayMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Business unit missions
+                                                            </a>
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a href="#subscriptionMissionsConfiguration" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="subscriptionMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Subscription missions configuration
+                                                            </a>
+                                                        </li> -->
+                                                        <li>
+                                                            <a href="#expensesMissionsConfiguration" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="expensesMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Expenses missions configuration
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-md-offset-4 main-panel-container">
+                                    <div class="no-data-container">
+                                        <div class="no-data-placeholder">
+                                            <h2>Click on a card to start</h2>
+                                            <p>Check out on the left side!</p>
+                                        </div>
+                                    </div>
+                                    <div class="setting-wrap-container">
+                                         <div class="col-md-12 settings-wrap bu-profile-create-container">
+                                            <span class="close">
+                                                <a href="javascript:;">
+                                                    <i class="material-icons">
+                                                        close
+                                                    </i>
+                                                </a>
+                                            </span>
+                                            <div class="header">
+                                                <strong class="primary-font">
+                                                    Create a new business unit
+                                                </strong>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 bu-profile-edit">
+                                                    <form class="form" >
+                                                        <div class="row">
+                                                           <div class="col-md-6 mb-3">
+                                                                <label>Business unit name</label>
+                                                                <input type="text" class="form-control" placeholder="ex: Webedia, LVMH"  value="">
+                                                            </div>
+                                                            <div class="col-md-6 mb-3">
+                                                                <label>Linked services</label>
+                                                                <div class="select-group">
+                                                                    <div class="form-group service">
+                                                                        <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Linked Services" id="service">
+                                                                            <option data-hidden="true"></option>
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 client-logo">
+                                                                <label>Business unit logo</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 my-3 empty">
+                                                                        <input class="validate[required]" type="file" name="logo_client" value="">
+                                                                        <a href="javascript:;" class="add-contact-pic">
+                                                                            <div class="col-md-12"> Add an image <span class="d-block">from your computer</span> </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 mb-3">
+                                                                        <a href="javascript:;" class="import-from-twitter" id="importTwitter">Or import it from Twitter</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="import-twitter-image">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 mb-3 search">
+                                                                            <div class="row">
+                                                                                <div class="col-md-9">
+                                                                                    <input name="twitter_screen_search" id="twitter_screen_search" class="form-control" type="text" value="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <button class="btn btn-yes full-width" type="button" id="twitter-search" name="twitter-search">Search</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-15">
+                                                                            <select class="chosen-default chosen-select" id="clientSector">
+                                                                                <option data-img-src="lbd/img/apple.jpg">Apple</option>
+                                                                                <option data-img-src="lbd/img/adobe.jpg">Adobe</option>
+                                                                                <option data-img-src="lbd/img/webedia.jpg">Webedia</option>
+                                                                                <option data-img-src="lbd/img/facebook-icon.png">Facebook</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 mb-5 image-container">
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <div class="client-image">
+                                                                                        <img src="lbd/img/adobe.jpg" class="img-circle" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 image-actions">
+                                                                                    <a class="replace" href="javascript:;">Replace Image</a>
+                                                                                    <a class="remove" href="javascript:;">Remove image</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <button type="button" class="btn btn-no full-width">Cancel</button>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <button type="submit" class="btn btn-yes full-width">Create business unit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="tab-content" id="businessUnit">
+                                            <div class="tab-content-container">
+                                                <div class="no-data-container">
+                                                    <div class="no-data-placeholder">
+                                                        <h2>No man-days mission created</h2>
+                                                        <p>Start creating a business init !</p>
+                                                        <a href="javascript:;" class="btn btn-fill btn-download create">
+                                                            <span class="btn-label">
+                                                                <i class="material-icons">add</i>
+                                                            </span>
+                                                            Create a business unit
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 contract-content-container">
+                                                    <div class="row">
+                                                        <h2 class="col-md-12 content-title">
+                                                            Choose a business unit
+                                                        </h2>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="card-section-list" data-role="contract-section-list">
+                                                                <ul>
+                                                                    <li class="add-new-block">
+                                                                        <div class="add-new-card">
+                                                                            <a href="javascript:;" id="buCreateNew" class="add-card">
+                                                                                <i class="material-icons">add</i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        C01-ZVA-2018-001-WEBEDIA
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Job profiles
+                                                                                    </span>
+                                                                                    23
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        business4content
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Job profiles
+                                                                                    </span>
+                                                                                    23
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        Paid Media
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Job profiles
+                                                                                    </span>
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="tab-content" id="expensesMissionsConfiguration">
+                                            <div class="tab-content-container">
+                                                <div class="no-data-container">
+                                                    <div class="no-data-placeholder">
+                                                        <h2>No man-days mission created</h2>
+                                                        <p>Start creating a business init !</p>
+                                                        <a href="javascript:;" class="btn btn-fill btn-download create">
+                                                            <span class="btn-label">
+                                                                <i class="material-icons">add</i>
+                                                            </span>
+                                                            Create a business unit
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 mt-30 pt-30">
+                                                        <div class="col-md-12">
+                                                            <div class="row">
+                                                                <div class="col-md-4 mb-3">
+                                                                    <label>Business unit</label>
+                                                                    <div class="select-group">
+                                                                        <div class="form-group business-unit">
+                                                                            <select class="selectpicker" title="Select business-unit" id="businessUnit">
+                                                                                <option data-hidden="true"></option>
+                                                                                <option>Uptilab</option>
+                                                                                <option>Content4Business</option>
+                                                                                <option>Falana</option>
+                                                                                <option>Dimaka</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 import-button">
+                                                                            <label>&nbsp;</label>
+                                                                            <button type="button" class="btn full-width">Import cost</button>
+                                                                        </div>
+                                                                        <div class="col-md-6 export-button">
+                                                                            <label>&nbsp;</label>
+                                                                            <button type="button" class="btn btn-drop full-width" data-toggle="dropdown">Export cost</button>
+                                                                            <ul class="dropdown-menu">
+                                                                                <li><a href="javascript:;">Export in .csv</a></li>
+                                                                                <li><a href="javascript:;">Export in .xlsx</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 contract-content-container">
+                                                    <div class="row">
+                                                        <h2 class="col-md-12 content-title">
+                                                            Choose a business unit
+                                                        </h2>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="card-section-list expense-mission-config" data-role="contract-section-list">
+                                                                <ul>
+                                                                    <li class="add-new-block">
+                                                                        <div class="add-new-card">
+                                                                            <a href="javascript:;" id="buCreateNew" class="add-card">
+                                                                                <i class="material-icons">add</i>
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        C01-ZVA-2018-001-WEBEDIA
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Rate cost
+                                                                                    </span>
+                                                                                    23
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        business4content
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Rate cost
+                                                                                    </span>
+                                                                                    23
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="col-md-12 card card-contract">
+                                                                            <div class="col-md-1 list-image-container">
+                                                                                <div class="list-image">
+                                                                                    <img alt="" class="img-circle" src="lbd/img/webedia.jpg" />
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-7 list-head-container">
+                                                                                <div class="header">
+                                                                                    <strong class="primary-font">
+                                                                                        Paid Media
+                                                                                    </strong>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="task-price">
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <span>
+                                                                                        Rate cost
+                                                                                    </span>
+                                                                                    2
+                                                                                </div>
+                                                                                <div class="col-md-2 turnover">
+                                                                                    <a data-placement="bottom" data-toggle="tooltip" href="javascript:;" id="buProfileEdit1" title="edit">
+                                                                                        <i class="material-icons">
+                                                                                            edit
+                                                                                        </i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dialogs -->
+
+
+<!-- <script src="lbd/js/jquery.min.js" type="text/javascript"></script>
+<script src="lbd/js/jquery-ui-1.10.0.custom.min.js" type="text/javascript"></script>
+<script src="lbd/js/jquery.validate.min.js"></script>
+<script src="lbd/js/underscore-min.js" type="text/javascript"></script>
+<script src="lbd/js/moment.min.js"></script>
+<script src="lbd/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="lbd/js/bootstrap-datetimepicker.js"></script>
+<script src="lbd/js/bootstrap-selectpicker.js"></script>
+<script src="lbd/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+<script src="lbd/js/chartist.min.js"></script>
+<script src="lbd/js/bootstrap-notify.js"></script>
+<script src="lbd/js/sweetalert2.js"></script>
+<script src="lbd/js/jquery-jvectormap.js"></script>
+<script src="lbd/js/jquery.bootstrap.wizard.min.js"></script>
+<script src="lbd/js/bootstrap-table.js"></script>
+<script src="lbd/js/fullcalendar.min.js"></script>
+<script src="lbd/js/light-bootstrap-dashboard.js"></script>
+<script src="lbd/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="lbd/js/jquery-ns-autogrow.min.js"></script>
+<script src="lbd/js/bootstrap-select.js" type="text/javascript"></script> -->
+<!-- Custom JS -->
+<!-- <script src="lbd/js/custom.js"></script> -->
+
+<!-- js plugins in libs -->
+<!-- <script src="lbd/lib/lib-live/progressbar.js"></script>
+<script src="lbd/lib/lib-live/jquery.tag-editor.min.js"></script>
+<script charset="utf-8" src="lbd/lib/lib-live/slick.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="lbd/lib/lib-live/jquery.rateyo.min.js"></script>
+<script src="lbd/lib/lib-live/bootstrap-tokenfield.min.js"></script>
+ -->
+<!-- <script charset="utf-8" src="lbd/lib/slick-1.6.0/slick/slick.js" type="text/javascript"></script> -->
+<!-- <script src="lbd/lib/chosen.jquery.min.js" type="text/javascript"></script> -->
+<!-- <script src="lbd/lib/ImageSelect.jquery.js" type="text/javascript"></script> -->
+<!-- <script type="text/javascript" src="lbd/lib/read-more/readmore.js"></script> -->
+<!-- <script src="lbd/lib/tinymce_4.2.5/js/tinymce/tinymce.min.js" type="text/javascript"></script> -->
+
+<!-- Bundled theme js files -->
+<script src="lbd/js/lbd-bundle.js" type="text/javascript"></script>
+<!-- Bundled plugin js files -->
+<script type="text/javascript" src="lbd/lib/plugins-bundle.js"></script>
+<!-- <script src="lbd/lib/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+<script src="lbd/lib/chosen/ImageSelect.jquery.js" type="text/javascript"></script> -->
+<script src="lbd/lib/tinymce_4.2.5/js/tinymce/tinymce.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="lbd/js/custom.js"></script>
+<script type="text/javascript" src="https://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+
+
+
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false">
+</script>
+
+
+
+
+<script>
+$(document).ready(function(){
+    $('#buCreateNew').click(function(e) {
+        e.preventDefault();
+        $('.bu-profile-create-container').fadeIn(function(){
+            $('.bu-profile-create-container').css({
+                display: 'block'
+            });
+            $('.overlay-main-container').css({
+                display: 'block'
+            });
+            $('.settings-wrap').css({
+                display: 'block'
+            });
+        });
+        $('.wp-app').css({
+            overflow: 'hidden'
+        });
+    });
+
+    $('.settings-wrap .close a, .settings-wrap .tab-navigation button.btn-cancel-settings').click(function() {
+        $('.overlay-main-container, .settings-wrap').fadeOut(function(){
+            $('.settings-wrap').css({
+                display: 'none'
+            });
+            $('.overlay-main-container').css({
+                display: 'none'
+            });
+            $('.wp-app').css({
+                overflow: 'auto'
+            });
+        })
+    });
+
+    /*Import twitter*/
+    $('#importTwitter').click(function(){
+        $('.client-logo .empty').hide();
+        $('.import-twitter-image').show();
+    });
+
+    // Card click to open Specific mission
+    $('div').delegate('.card-section-list ul li .card', 'click', function(e){
+        if($(e.target).parents('.card-section-list').hasClass('expense-mission-config')){
+            if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+                 // code placed inside this condition is not executed on clicking the element #test
+                e.stopPropagation();
+                // console.log('Clicked on card-box');
+                window.open('bu-single-expense.html','_blank');
+            }
+        }else{
+            if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+                // code placed inside this condition is not executed on clicking the element #test
+                e.stopPropagation();
+                // console.log('Clicked on card-box');
+                window.open('bu-single.html','_blank');
+            }
+            // console.log('Clicked on card-box 02');
+        }
+    });
+
+    $('div').delegate('.card-section-list ul li .card', 'mouseover', function(e){
+       if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+          // code placed inside this condition is not executed on clicking the element #test
+          $(this).closest('.card').css({'cursor':'pointer', 'box-shadow':'0px 0px 1px 1px rgba(68,138,255,1)'});
+       }
+    });
+    $('div').delegate('.card-section-list ul li .card', 'mouseout', function(e){
+       if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+          // code placed inside this condition is not executed on clicking the element #test
+          $(this).closest('.card').css({'cursor':'auto', 'box-shadow':'0px 0px 5px 0px rgba(50,50,50,0.1)'});
+       }
+    });
+});
+</script>
+
+</body>
+
+</html>

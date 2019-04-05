@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Light Bootstrap Dashboard PRO by Creative Tim </title>
+    <!-- @include _partials/_all-meta-head.html -->
+</head>
+
+<body class="wp-app layout-3 quotes-list">
+	<!-- @include _partials/_main-menu.html -->
+<div class="wrapper">
+    <!-- @include _partials/_sidebar.html -->
+    <div class="container-fluid page-wrap">
+        <div class="row">
+            <div class="col-md-12 main-panel-wrap">
+                <div class="main-panel">
+                    <div class="container-fluid main-panel-page">
+                        <div class="admin-list-main-page">
+                            <div class="row main-container">
+                                <div class="overlay-main-container"></div>
+                                <div class="col-md-4 tab-panel-container">
+                                    <div class="tab-panel">
+                                        <nav class="navbar navbar-default">
+                                            <div class="container-fluid">
+                                                <div class="navbar-header">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12 page-title">
+                                                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                                            <span class="sr-only">Toggle navigation</span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                            <span class="icon-bar"></span>
+                                                        </button>
+                                                        <a class="navbar-brand" href="#">Admin</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                        <div class="page-filter">
+                                            <div class="card-status-list-container">
+                                                <div class="status-list">
+                                                    <ul class="btn-group btn-group-justified" data-toggle="buttons">
+                                                        <li>
+                                                            <a href="#agreedTurnover" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="agreedTurnover" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Agreed turnover
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#realTurnover" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="realTurnover" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Real turnover
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#datasExport" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="datasExport" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Datas export
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#royaltiesPayment" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="royaltiesPayment" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Royalties payment
+                                                            </a>
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a href="#jobProfile" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="jobProfile" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Job profile (man/days)
+                                                            </a>
+                                                        </li> -->
+                                                        <li>
+                                                            <a href="#businessUnit" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="mandayMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Business unit missions
+                                                            </a>
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a href="#subscriptionMissionsConfiguration" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="subscriptionMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Subscription missions configuration
+                                                            </a>
+                                                        </li> -->
+                                                        <li>
+                                                            <a href="#expensesMissionsConfiguration" class="btn btn-default" data-toggle="tab">
+                                                                <input type="radio" id="" name="admin-tabs" value="expensesMissionsConfiguration" />
+                                                                <img class="icon" src="lbd/img/admin-menus-icon.svg" /> Expenses missions configuration
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-md-offset-4 main-panel-container">
+                                    <div class="no-data-container">
+                                        <div class="no-data-placeholder">
+                                            <h2>Click on a card to start</h2>
+                                            <p>Check out on the left side!</p>
+                                        </div>
+                                    </div>
+                                    <div class="setting-wrap-container">
+                                         <div class="col-md-12 settings-wrap bu-profile-create-container">
+                                            <span class="close">
+                                                <a href="javascript:;">
+                                                    <i class="material-icons">
+                                                        close
+                                                    </i>
+                                                </a>
+                                            </span>
+                                            <div class="header">
+                                                <strong class="primary-font">
+                                                    Create a new business unit
+                                                </strong>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 bu-profile-edit">
+                                                    <form class="form" >
+                                                        <div class="row">
+                                                           <div class="col-md-6 mb-3">
+                                                                <label>Business unit name</label>
+                                                                <input type="text" class="form-control" placeholder="ex: Webedia, LVMH"  value="">
+                                                            </div>
+                                                            <div class="col-md-6 mb-3">
+                                                                <label>Linked services</label>
+                                                                <div class="select-group">
+                                                                    <div class="form-group service">
+                                                                        <select class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-selected-text-format="count > 3" title="Linked Services" id="service">
+                                                                            <option data-hidden="true"></option>
+                                                                            <option value="0">0</option>
+                                                                            <option value="1">1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12 client-logo">
+                                                                <label>Business unit logo</label>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 my-3 empty">
+                                                                        <input class="validate[required]" type="file" name="logo_client" value="">
+                                                                        <a href="javascript:;" class="add-contact-pic">
+                                                                            <div class="col-md-12"> Add an image <span class="d-block">from your computer</span> </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12 mb-3">
+                                                                        <a href="javascript:;" class="import-from-twitter" id="importTwitter">Or import it from Twitter</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="import-twitter-image">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 mb-3 search">
+                                                                            <div class="row">
+                                                                                <div class="col-md-9">
+                                                                                    <input name="twitter_screen_search" id="twitter_screen_search" class="form-control" type="text" value="">
+                                                                                </div>
+                                                                                <div class="col-md-3">
+                                                                                    <button class="btn btn-yes full-width" type="button" id="twitter-search" name="twitter-search">Search</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6 mb-15">
+                                                                            <select class="chosen-default chosen-select" id="clientSector">
+                                                                                <option data-img-src="lbd/img/apple.jpg">Apple</option>
+                                                                                <option data-img-src="lbd/img/adobe.jpg">Adobe</option>
+                                                                                <option data-img-src="lbd/img/webedia.jpg">Webedia</option>
+                                                                                <option data-img-src="lbd/img/facebook-icon.png">Facebook</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12 mb-5 image-container">
+                                                                            <div class="row">
+                                                                                <div class="col-md-2">
+                                                                                    <div class="client-image">
+                                                                                        <img src="lbd/img/adobe.jpg" class="img-circle" />
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-3 image-actions">
+                                                                                    <a class="replace" href="javascript:;">Replace Image</a>
+                                                                                    <a class="remove" href="javascript:;">Remove image</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <button type="button" class="btn btn-no full-width">Cancel</button>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <button type="submit" class="btn btn-yes full-width">Create business unit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <!-- @include _partials/_admin-list-job-profile.html -->
+                                        <!-- @include _partials/_admin-expenses-mission-config.html -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal dialogs -->
+
+
+<!-- @include _partials/_all-js-files.html -->
+
+<script>
+$(document).ready(function(){
+    $('#buCreateNew').click(function(e) {
+        e.preventDefault();
+        $('.bu-profile-create-container').fadeIn(function(){
+            $('.bu-profile-create-container').css({
+                display: 'block'
+            });
+            $('.overlay-main-container').css({
+                display: 'block'
+            });
+            $('.settings-wrap').css({
+                display: 'block'
+            });
+        });
+        $('.wp-app').css({
+            overflow: 'hidden'
+        });
+    });
+
+    $('.settings-wrap .close a, .settings-wrap .tab-navigation button.btn-cancel-settings').click(function() {
+        $('.overlay-main-container, .settings-wrap').fadeOut(function(){
+            $('.settings-wrap').css({
+                display: 'none'
+            });
+            $('.overlay-main-container').css({
+                display: 'none'
+            });
+            $('.wp-app').css({
+                overflow: 'auto'
+            });
+        })
+    });
+
+    /*Import twitter*/
+    $('#importTwitter').click(function(){
+        $('.client-logo .empty').hide();
+        $('.import-twitter-image').show();
+    });
+
+    // Card click to open Specific mission
+    $('div').delegate('.card-section-list ul li .card', 'click', function(e){
+        if($(e.target).parents('.card-section-list').hasClass('expense-mission-config')){
+            if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+                 // code placed inside this condition is not executed on clicking the element #test
+                e.stopPropagation();
+                // console.log('Clicked on card-box');
+                window.open('bu-single-expense.html','_blank');
+            }
+        }else{
+            if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+                // code placed inside this condition is not executed on clicking the element #test
+                e.stopPropagation();
+                // console.log('Clicked on card-box');
+                window.open('bu-single.html','_blank');
+            }
+            // console.log('Clicked on card-box 02');
+        }
+    });
+
+    $('div').delegate('.card-section-list ul li .card', 'mouseover', function(e){
+       if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+          // code placed inside this condition is not executed on clicking the element #test
+          $(this).closest('.card').css({'cursor':'pointer', 'box-shadow':'0px 0px 1px 1px rgba(68,138,255,1)'});
+       }
+    });
+    $('div').delegate('.card-section-list ul li .card', 'mouseout', function(e){
+       if($(e.target).closest('.checkbox, a, button, .card-user, .quote-mission-creation, .card-draft').length === 0) {
+          // code placed inside this condition is not executed on clicking the element #test
+          $(this).closest('.card').css({'cursor':'auto', 'box-shadow':'0px 0px 5px 0px rgba(50,50,50,0.1)'});
+       }
+    });
+});
+</script>
+
+</body>
+
+</html>
